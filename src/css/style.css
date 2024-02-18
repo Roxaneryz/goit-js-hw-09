@@ -8,6 +8,10 @@
     gap: 24px;
     row-gap: 24px;
 }
+.gallery-link-item{
+    color: currentColor;
+    text-decoration: none;
+}
 
 .gallery-image {
     width: 360px;
