@@ -119,8 +119,6 @@ galleryContainer.addEventListener('click', event => {
   
   });
 
-galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
-
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
