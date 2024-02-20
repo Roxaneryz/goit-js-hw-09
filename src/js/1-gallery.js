@@ -92,33 +92,6 @@ const galleryMarkup = images.map(image => {
 
 galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
 
-function handleClick(event) {
-  event.preventDefault(); 
-
-  if (event.target.nodeName !== 'IMG') {
-    return;
-  }
-
-  const largeImageSrc = event.target.dataset.source;
-  console.log('Посилання на велике зображення:', largeImageSrc);
-}
-
-galleryContainer.addEventListener('click', handleClick);
-
-galleryContainer.addEventListener('click', event => {
-    event.preventDefault();
-    
-   
-    if (event.target.nodeName !== 'IMG') {
-      return;
-    }
-  
-    
-    const largeImageSrc = event.target.dataset.source;
-  
-  
-  });
-
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,

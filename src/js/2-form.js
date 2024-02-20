@@ -1,7 +1,7 @@
 const form = document.querySelector('.feedback-form');
 
 function saveFormData(event) {
-  event.preventDefault();
+  
   
   const formData = {
     email: form.elements.email.value.trim(),
